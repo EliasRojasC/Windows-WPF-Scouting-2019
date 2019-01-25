@@ -1,0 +1,29 @@
+﻿<Page x:Class="scoutingProject.Pages.Export"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="1000"
+      Title="Export">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Button FontSize="25" Style="{StaticResource StandardButton}" FontFamily="{StaticResource SourceSansProRegular}" Content="Upload To Sheets©" Grid.Row="0" Click="SheetsClickSender"/>
+            <TextBlock Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="CurrentSheetsId" Text="There is no set Sheets ID" FontSize="30"/>
+            <Button Style="{StaticResource StandardButton}" FontSize="30" FontFamily="{StaticResource SourceSansProRegular}" Content="Create CSV File" Grid.Row="2" Click="CreateCSV"/>
+            <TextBlock Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="CurrentCsvDIR" Text="There is no set Directory" FontSize="30"/>
+        </Grid>
+    </Grid>
+</Page>

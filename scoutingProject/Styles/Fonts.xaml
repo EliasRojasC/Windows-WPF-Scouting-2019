@@ -1,0 +1,8 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:scoutingProject.Styles">
+    <FontFamily x:Key="SourceSansProRegular">pack://application;,,,/Fonts/#Source Sans Pro Light</FontFamily>
+    <FontFamily x:Key="Test">pack://application;,,,/Fonts/#Oswald Regular</FontFamily>
+    <FontFamily x:Key="FontAwsome">pack://application;,,,/Fonts/#FontAwesome</FontFamily>
+    
+</ResourceDictionary>
